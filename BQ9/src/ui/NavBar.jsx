@@ -18,7 +18,7 @@ export const Navbar = () => {
                 className="navbar-brand" 
                 to="/"
             >
-                BQ9
+                Burger Queen
             </Link>
 
             <div className="navbar-collapse">
