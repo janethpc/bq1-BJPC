@@ -11,6 +11,7 @@ export const AppRouter = () => {
             <Routes>
                 <Route path="Login" element={<LoginPage />} />
                 <Route path="/*" element={<BQroutes/>} />
+                
 
             </Routes>
         </>
