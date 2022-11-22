@@ -1,6 +1,6 @@
 import { AppRouter } from "./router/AppRouter";
 
-export const Login = () => {
+export const AppRouterDom = () => {
     return (
         <>
             <AppRouter />
