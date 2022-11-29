@@ -35,7 +35,7 @@ export const productos = [
         'id': 'alimento',
         'name':'Hamburguesa simple', 
         'price':'10', 
-        'image':'https://www.hogar.mapfre.es/media/2018/09/hamburguesa-sencilla.jpg',
+        'image':'https://img.freepik.com/fotos-premium/hamburguesa-simple-plato-blanco-sobre-fondo-negro_356194-892.jpg?w=2000',
         'type':'almuerzo',
         'dateEntry':'27/11/2022'
     },

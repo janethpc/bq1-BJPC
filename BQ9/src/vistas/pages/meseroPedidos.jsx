@@ -1,12 +1,29 @@
+import { ProductList } from "../components/ProductList"
+
+
 export const MeseroPedidos = () => {
+      
+
   return (
     <>
+    
       <h1>Pedido Nuevo</h1>
       <hr/>
 
-      <button>Desayuno</button>
+      <p className="btn">Desayuno</p>
+      <hr/>
 
-      <button>Almuerzo</button>
+      <ProductList type='Desayuno'/>
+      
+      <br/>
+
+      <p className="btn">Almuerzo</p>
+      <hr/>
+      
+
+      <ProductList type='almuerzo'/>
+
+       
     </>
     
   )

@@ -1,4 +1,4 @@
-import { productos } from "../../data/menu";
+import { productos } from "../../../data/menu";
 
 export const getProductosBytype = (type) => {
     const validType = ['Desayuno','almuerzo'];
