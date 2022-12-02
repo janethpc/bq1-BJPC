@@ -3,6 +3,7 @@ import { Navbar } from "../../ui/NavBar";
 import {MeseroOrdenes} from '../pages/meseroOrdenes';
 import { MeseroPedidos } from "../pages/meseroPedidos";
 
+
 export const BQroutes = () => {
   return (
     <>
@@ -13,6 +14,7 @@ export const BQroutes = () => {
         <Routes>
                 <Route path="Pedidos" element={<MeseroPedidos />} />
                 <Route path="Ordenes" element={<MeseroOrdenes />} />
+                
                 
                 <Route path="/" element={<Navigate to="/Login"/>} />
 
