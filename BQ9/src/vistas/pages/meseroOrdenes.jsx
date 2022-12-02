@@ -4,7 +4,7 @@ export const MeseroOrdenes = () => {
         <>
         <h1>Nuevo Pedido</h1>
         <div class="row justify-content-between">
-        <div class="col-7">
+        <div class="col-8">
           <h2>Menu</h2>
           <hr/>
 
