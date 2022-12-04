@@ -1,5 +1,6 @@
 import { Navigate, Route, Routes } from "react-router-dom";
 import { Navbar } from "../../ui/NavBar";
+import { Chef } from "../pages/Chef";
 import {MeseroOrdenes} from '../pages/meseroOrdenes';
 import { MeseroPedidos } from "../pages/meseroPedidos";
 
@@ -14,7 +15,7 @@ export const BQroutes = () => {
         <Routes>
                 <Route path="Pedidos" element={<MeseroPedidos />} />
                 <Route path="Ordenes" element={<MeseroOrdenes />} />
-                
+                <Route path="Chef" element={<Chef/>} />
                 
                 <Route path="/" element={<Navigate to="/Login"/>} />
 

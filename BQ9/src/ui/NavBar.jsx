@@ -37,6 +37,13 @@ export const Navbar = () => {
                     >
                         Ordenes
                     </NavLink>
+
+                    <NavLink 
+                        className={ ({isActive}) => `nav-item nav-link ${isActive ? 'active':''} ` }
+                        to="/Chef"
+                    >
+                        Chef
+                    </NavLink>
                 </div>
             </div>
 
