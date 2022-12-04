@@ -1,19 +1,25 @@
 import React from 'react'
 
-export const MenuCard = ({name, price, image}) => {
-  const evento = () => { console.log('cafe')}
+export const pedido = []
+const escuchaEvent= (memoizedProps) => {
+  return console.log(memoizedProps.target)
+  }
+
+export const MenuCard = ({name, price, image,}) => {
+  
   return (
     <div className='col'>
-      <div className='card btn' onClick={evento}>
+      <div className='card btn'>
         <div className='row no-gutters'>
          
             <img src={image} className='card-img-top' alt={name}/>
+            
           
           
 
           <div className='col'>
             <div className='card-body'>
-              <p className=''>{name}</p>
+              <p className='' onClick={escuchaEvent}>{name}</p>
               <p>${price}</p>
              
             </div>
