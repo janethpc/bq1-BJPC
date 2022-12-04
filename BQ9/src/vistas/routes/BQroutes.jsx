@@ -14,7 +14,7 @@ export const BQroutes = () => {
         
         <Routes>
                 <Route path="Pedidos" element={<MeseroPedidos />} />
-                <Route path="Ordenes" element={<MeseroOrdenes />} />
+                <Route path="Ordenes" element={<MeseroOrdenes value={0} />} />
                 <Route path="Chef" element={<Chef/>} />
                 
                 <Route path="/" element={<Navigate to="/Login"/>} />

@@ -2,13 +2,20 @@ import { ModalnewOrder } from "../components/ModalnewOrder"
 import { ProductList } from "../components/ProductList"
 import { ResumenPedido } from "../components/ResumenPedido"
 import { useState } from 'react'
-import { pedido } from "../components/MenuCard"
 
 
-export const MeseroOrdenes = () => {
-  const [ counter, setCounter ] = useState(0);
+
+export const MeseroOrdenes = ({value}) => {
+  const [ counter, setCounter ] = useState(value);
   const  handleAdd = () => { 
       setCounter(counter+1)
+  }
+  const handleDelet = () => {
+    setCounter(counter-1)
+  }
+
+  const handleReset= () => {
+    setCounter(value)
   }
 
   return (
@@ -22,10 +29,12 @@ export const MeseroOrdenes = () => {
 
           <h2 className="btn">Desayuno</h2>
           <hr />
-          <div>
-            <button onClick={handleAdd}></button>
+          <button onClick={handleAdd}>+1</button>
+          <button onClick={handleDelet}>-1</button>
+          <button onClick={handleReset}>reset</button>
           <ProductList type='Desayuno'/>
-          </div>
+          
+          
           <br />
 
           <h3 className="btn">Almuerzo</h3>
@@ -44,8 +53,8 @@ export const MeseroOrdenes = () => {
     </h5>
     <ul className="list-group list-group-flush">
       <li className="list-group-item ">{counter}</li>
+      <li className="list-group-item">{counter}</li>
       <li className="list-group-item"></li>
-      <li className="list-group-item">{pedido}</li>
     </ul>
     <div className="card-footer">
       <p> Nombre del Mesero: <span>fulanito</span></p>
@@ -55,6 +64,7 @@ export const MeseroOrdenes = () => {
       </div>
     </div>
   </div>
+  <br/>
 
         <ResumenPedido/>
           

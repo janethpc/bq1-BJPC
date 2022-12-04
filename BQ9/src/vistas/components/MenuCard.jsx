@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const pedido = []
+
 const escuchaEvent= (memoizedProps) => {
   return console.log(memoizedProps.target)
   }
