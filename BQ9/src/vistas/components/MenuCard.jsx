@@ -1,10 +1,10 @@
 import React from 'react'
 
 export const MenuCard = ({name, price, image}) => {
-
+  const evento = () => { console.log('cafe')}
   return (
     <div className='col'>
-      <div className='card btn'>
+      <div className='card btn' onClick={evento}>
         <div className='row no-gutters'>
          
             <img src={image} className='card-img-top' alt={name}/>
